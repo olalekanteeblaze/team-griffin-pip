@@ -1,0 +1,10 @@
+import styled, { keyframes } from "styled-components";
+import { bounce } from "react-animations";
+import "./styles.css";
+
+export default function App() {
+  const Bounce = styled.div`
+    animation: 2s ${keyframes`${bounce}`} infinite;
+  `;
+  return <Bounce>Hello Animation bounce</Bounce>;
+}
